@@ -34,10 +34,10 @@ This assignment is designed to assess your practical SQL skills. You will be req
 You can earn up to **2 bonus points** by incorporating the following:
 
 | Bonus Task                          | Points |
-|------------------------------------|--------|
-| Publish source code to GitLab      | +0.5   |
-| Use `UNION` or `UNION ALL`         | +0.5   |
-| Use a Common Table Expression (CTE)| +1.0   |
+|-------------------------------------|--------|
+| Publish source code to GitHub       | +0.5   |
+| Use `UNION` or `UNION ALL`          | +0.5   |
+| Use a Common Table Expression (CTE) | +1.0   |
 
 ---
 
@@ -50,7 +50,7 @@ Please submit:
   - Data insertion (`insert_data.sql`)
   - Queries (`queries.sql`)
 - Optionally, a screenshot or exported result of your complex queries
-- GitLab repository URL (for bonus)
+- GitHub repository URL (for bonus)
 - A brief explanation of your schema and query logic in a separate `README.md` or `comments` in your script
 
 ---
