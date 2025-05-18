@@ -19,32 +19,32 @@ CREATE TABLE `sales` (
 -- 3
 -- Import data from sales.scv. It takes some time (30 - 60 minutes).
 
-
--- 3
+--4
 select count(*) from sales; -- 4636318
-
 select * from sales limit 10000;
 
--- 4
--- 4.1
+-- 5
+-- 5.1
 explain analyze
 select * from sales where salesID = 898777;
 
--- 4.2
+-- 5.2
 explain analyze
 select * from sales where TransactionNumber = 'RPCTLOEB2ELU1DIREQR5';
 
--- Output 4.2:
+-- Output 5.2:
 -> Filter: (sales.TransactionNumber = 'RPCTLOEB2ELU1DIREQR5')  (cost=472077 rows=449787) (actual time=2.27..2402 rows=1 loops=1)
     -> Table scan on sales  (cost=472077 rows=4.5e+6) (actual time=0.273..1998 rows=4.64e+6 loops=1)
 
--- 5 Adding index
+-- 6 Adding index
 create index TransactionNumberIDX
 ON sales (TransactionNumber);
 
--- 6
+-- 7
 explain analyze
 select * from sales where TransactionNumber = 'RPCTLOEB2ELU1DIREQR5';
 
--- Output 6:
+-- Output 7:
 -> Index lookup on sales using TransactionNumberIDX (TransactionNumber='RPCTLOEB2ELU1DIREQR5')  (cost=1.1 rows=1) (actual time=1.18..1.19 rows=1 loops=1)
+
+-- 8 Try to visualize Execution Plan in MySQL Workbench
