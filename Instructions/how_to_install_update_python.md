@@ -7,7 +7,7 @@ This guide covers installing or updating Python to the latest stable version (Py
 ### Method 1: Official Python Installer (Recommended)
 
 1. Visit the official Python website: https://www.python.org/downloads/
-2. Click "Download Python 3.12.x" (the latest version will be displayed)
+2. Click "Download Python 3.13.x" (the latest version will be displayed)
 3. Open the downloaded `.pkg` file
 4. Follow the installation wizard
 5. Make sure to check "Add Python to PATH" if prompted
@@ -18,7 +18,7 @@ If you have Homebrew installed:
 
 ```bash
 # Install Python
-brew install python
+brew install python@3.13
 
 # Or update if already installed
 brew upgrade python
@@ -33,13 +33,13 @@ python3 --version
 # or
 python --version
 ```
-
+a
 ## Windows Installation
 
 ### Method 1: Official Python Installer (Recommended)
 
 1. Visit the official Python website: https://www.python.org/downloads/
-2. Click "Download Python 3.12.x" (the latest version will be displayed)
+2. Click "Download Python 3.13.x" (the latest version will be displayed)
 3. Open the downloaded `.exe` file
 4. **Important**: Check "Add Python to PATH" at the bottom of the installer
 5. Click "Install Now" or choose "Customize installation" for advanced options
@@ -48,7 +48,7 @@ python --version
 ### Method 2: Microsoft Store
 
 1. Open Microsoft Store
-2. Search for "Python 3.12"
+2. Search for "Python 3.13"
 3. Click "Get" or "Install"
 
 ### Method 3: Using Chocolatey
@@ -126,7 +126,7 @@ If you get "python is not recognized" or "command not found":
 1. Search for "Environment Variables" in Start Menu
 2. Click "Environment Variables"
 3. Find "Path" in System Variables, click "Edit"
-4. Add Python installation directory (usually `C:\Users\YourName\AppData\Local\Programs\Python\Python312\`)
+4. Add Python installation directory (usually `C:\Users\YourName\AppData\Local\Programs\Python\Python313\`)
 
 **macOS:**
 Add to your shell profile (`.bashrc`, `.zshrc`, etc.):
@@ -138,7 +138,7 @@ export PATH="/usr/local/bin/python3:$PATH"
 
 If you have multiple versions installed:
 - Use `python3` command on macOS/Linux
-- Use `py -3.12` on Windows to specify version
+- Use `py -3.13` on Windows to specify version
 - Use `which python` (macOS/Linux) or `where python` (Windows) to see which version is being used
 
 ## Checking Your Installation
