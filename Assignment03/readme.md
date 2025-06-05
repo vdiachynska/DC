@@ -75,15 +75,15 @@ Demonstrate how different MySQL transaction isolation levels affect data consist
 
 ## 📊 Evaluation Table
 
-| Task                                                   | Points |
-|--------------------------------------------------------|--------|
-| Dirty Read under READ UNCOMMITTED                      | 5      |
-| Non-Repeatable Read under READ COMMITTED               | 5      |
-| Clear explanation with correct terminology             | 5      |
-| Bonus: Demonstrates REPEATABLE READ                    | +1     |
-| Bonus: Comparison of READ COMMITTED vs REPEATABLE READ | +1     |
-| Bonus: Demonstrates and explains deadlock              | +1     |
-| **Total**                                              | **15 + 3 Bonus** |
+| Task                                                                 | Points |
+|----------------------------------------------------------------------|--------|
+| Dirty Read under READ UNCOMMITTED                                    | 5      |
+| Non-Repeatable Read under READ COMMITTED                             | 5      |
+| Clear explanation with correct terminology (2 questions in the  end) | 5      |
+| Bonus: Demonstrates REPEATABLE READ                                  | +1     |
+| Bonus: Comparison of READ COMMITTED vs REPEATABLE READ               | +1     |
+| Bonus: Demonstrates and explains deadlock                            | +1     |
+| **Total**                                                            | **15 + 3 Bonus** |
 
 ---
 
@@ -93,3 +93,24 @@ Demonstrate how different MySQL transaction isolation levels affect data consist
 - A document or markdown report explaining each scenario
 - Clearly labeled sections for each task and bonus
 
+### 🧠 Transaction Knowledge Check – 10 Questions
+
+1. What is a **dirty read**, and under which MySQL isolation level can it occur?
+
+2. How does the **READ COMMITTED** isolation level prevent dirty reads but still allow non-repeatable reads?
+
+3. Define a **non-repeatable read** and describe how it can be reproduced in a MySQL session.
+
+4. What is a **transaction** in MySQL, and why are transactions important in multi-user database environments?
+
+5. What does the **COMMIT** statement do in a transaction, and how does it affect data visibility?
+
+6. Explain how the **REPEATABLE READ** isolation level prevents non-repeatable reads. What behavior did you observe during testing?
+
+7. Compare the behavior of **READ COMMITTED** and **REPEATABLE READ** when a row is updated during an active transaction. What differences did you observe?
+
+8. What is a **deadlock** in MySQL, and how can it occur in a multi-session environment?
+
+9. How does MySQL detect and resolve **deadlocks**? What error message is typically shown?
+
+10. Why is it important to choose the appropriate **transaction isolation level** for your application?
